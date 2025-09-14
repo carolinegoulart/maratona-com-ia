@@ -22,5 +22,3 @@ jobs:
       - run: echo "Obter o código"
       - run: echo "Configurar o Kubeconfig"
       - run: echo "Executar o apply"
-  
-  
