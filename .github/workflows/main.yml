@@ -18,6 +18,9 @@ jobs:
       - run: echo "Enviar a imagem para o Docker Hub"
   CD:
     runs-on: ubuntu-latest
+    # Por padrao, os jobs são executados de forma paralela.
+    # O needs 
+    needs: [CI]
     steps:
       - run: echo "Obter o código"
       - run: echo "Configurar o Kubeconfig"
