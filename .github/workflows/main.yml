@@ -29,7 +29,6 @@ jobs:
 
       - name: Run tests
         working-directory: ./src
-        uses: actions/setup-python@v6
         run: |
           python -m pytest tests/ -v
 
